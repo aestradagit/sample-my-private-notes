@@ -154,12 +154,17 @@
 				$('#new_item_id').attr("placeholder", "Item Id field is required");
 				return;
 			}
+			//if($('#new_item_id').val().indexOf(" ") > -1)
+			//{
+			//	$('#new_item_id').val("");
+			//	$('#new_item_id').attr("placeholder", "Item Id can't contain spaces");
+			//	return;
+			//}
+			var itemID = $('#new_item_id').val();
 			if ($('#new_item_text').val() === ""){
 				$('#new_item_text').attr("placeholder", "Item data is required");
 				return;
 			}            
-			//itemID is used as the html element id, so it cant contain spaces.
-			var itemID = $('#new_item_id').val().replace(" ", "_");
 			//if an item with the id exists then dont add the new item.
 			var items = JSON.parse(localStorage.getItem('itemsList'));
 			if (itemID in items){
