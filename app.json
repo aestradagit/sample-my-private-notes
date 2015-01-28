@@ -1,14 +1,15 @@
 {
-"reponame":"sample-my-private-notes",
-"title":"My Private Notes",
-"abbr":"MyPrivateNotes",
-"tooltip":"A simple app demonstrating how to use the App Security API",
-"description":"A simple app demonstrating how to use the App Security API",
-"articleUrl":"https://software.intel.com/en-us/node/517380#",
-"keywords":["jQuery", "App Security API", "Apache Cordova API", "SSAPI"],
+"reponame":"sample-rolling-can",
+"title":"Rolling Can Accelerometer Demonstration",
+"abbr":"Rolling Can",
+"tooltip":"This demo shows how an app might access the accelerometer of a native device using the JavaScript bridge library",
+"description":"This demonstration application will use the JavaScript bridge to read the device's current accelerometer data and act on it.",
+"articleUrl":"http://software.intel.com/en-us/articles/intelr-xdk-rolling-can-sample",
+"keywords":["Accelerometer","intel.xdk API"],
 "visible" : "true",
-"highlights" : ["jQuery", "App Security API", "Apache Cordova API"],
+"highlights" : ["Accelerometer","intel.xdk API"],
 "apppreview":"true",
-"appname":"demo.MyPrivateNotes",
-"relname":"4.0.0"
+"appname":"demo.accelerometernew",
+"relname":"4.0.0",
+"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
