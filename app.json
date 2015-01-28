@@ -10,5 +10,6 @@
 "highlights" : ["jQuery", "App Security API", "Apache Cordova API"],
 "apppreview":"true",
 "appname":"demo.MyPrivateNotes",
-"relname":"4.0.0"
+"relname":"4.0.0",
+"projectTypeName": "com.intel.xdk.projecttype.jsapp"
 }
