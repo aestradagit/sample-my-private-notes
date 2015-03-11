@@ -167,16 +167,18 @@
 				$('#show_item_button').hide();
 				if (item.instanceID === unavailableItem)
 				{
-					$('#item_data').hide();
 					$('#item_image').attr('src', 'images/lock-it.png');
+					$('#item_image').show();
 					$('#item_tag').text('Wrong PIN number');
 					$('#item_tag').css({ 'font-weight':'bold', 'color':'red'});
+					$('#item_data').hide();
 				}
 				else
 				{
 					intel.security.secureData.getData(function (itemData) {
 						if (item.isImage === true) {
 							$('#item_data').hide();
+							$('#item_image').show();
 							$('#item_image').attr('src', itemData);
 						}
 						else {
@@ -321,43 +323,42 @@
 				//with the loaded items.
 				loadItemsFromStorage();
 			}
-			});
-			//add event callbacks
-			$("#item_page_popup").bind({
-				popupafterclose: function (event, ui) {
-					$('#show_item_button').show();
-					$('#show_item_button').text('Show');
-					$('#item_data').val('');
-					$('#item_image').attr('src', 'images/lock-it.png');
-				}
-			});
-
-			//swipe delete event callback
-			$(document).on("swipeleft swiperight", ".list_elem", function (event) {
-					var itemID = $(this).attr('id');
-					var itemsList = JSON.parse(localStorage.getItem('itemsList'));
-					var instanceID = itemsList[itemID].instanceID;
-					$("#confirm").popup("open");
-					$("#confirm #yes").on("click", function () {
-						
-						//if item is in secure storage remove secureStorage object.
-						var item = itemsList[itemID];
-						if (isItemSecured(item)) {
-							intel.security.secureStorage.delete(null, fail, { 'id': itemID });
-							if (instanceID !== unavailableItem)
-							{
-								intel.security.secureData.destroy(null, fail, instanceID);
-							}
+		});
+		//add event callbacks
+		$("#item_page_popup").bind({
+			popupafterclose: function (event, ui) {
+				$('#show_item_button').show();
+				$('#show_item_button').text('Show');
+				$('#item_data').val('');
+				$('#item_image').attr('src', 'images/lock-it.png');
+			}
+		});
+		//swipe delete event callback
+		$(document).on("swipeleft swiperight", ".list_elem", function (event) {
+				var itemID = $(this).attr('id');
+				var itemsList = JSON.parse(localStorage.getItem('itemsList'));
+				var instanceID = itemsList[itemID].instanceID;
+				$("#confirm").popup("open");
+				$("#confirm #yes").on("click", function () {
+					
+					//if item is in secure storage remove secureStorage object.
+					var item = itemsList[itemID];
+					if (isItemSecured(item)) {
+						intel.security.secureStorage.delete(null, fail, { 'id': itemID });
+						if (instanceID !== unavailableItem)
+						{
+							intel.security.secureData.destroy(null, fail, instanceID);
 						}
-						removeItemFromListView(itemID);												
-						delete itemsList[itemID];
-						localStorage.setItem('itemsList', JSON.stringify(itemsList));
-						$("#confirm #yes").off();
-					});			
-					$("#confirm #cancel").on("click", function () {
-						$("#confirm #cancel").off();
-					});
-    		});
+					}
+					removeItemFromListView(itemID);												
+					delete itemsList[itemID];
+					localStorage.setItem('itemsList', JSON.stringify(itemsList));
+					$("#confirm #yes").off();
+				});			
+				$("#confirm #cancel").on("click", function () {
+					$("#confirm #cancel").off();
+				});
+    	});
     }
 	
     /**************************************************************************/

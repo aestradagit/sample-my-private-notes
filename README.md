@@ -1,6 +1,6 @@
 My Private notes
 =====
-This Sample application is meant to demonstrate how to create a hybrid mobile application
+This is a simple secure notes sample application. It is meant to demonstrate how to create a hybrid mobile application
 that takes advantage of the App Security API. 
 
 Intel(R) XDK
@@ -80,7 +80,7 @@ http://creativecommons.org/licenses/by/3.0/us/
 * images/photo-04.jpg
 * images/photo-06.jpg
 
-Cordova Library (3.4.0-0.1.3)
+Cordova Library (3.5)
 --------------------------
 * source:  http://cordova.apache.org/
 * license:  http://phonegap.com/about/license/

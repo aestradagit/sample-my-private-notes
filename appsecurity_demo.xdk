@@ -2,52 +2,25 @@
   "project": {
     "projectSettingsVersion": "1.2",
     "creationData": {
-      "type": "Demo",
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "https://edge-intel.s3.amazonaws.com/jsapp/production/release-2014-ww51/sample-my-private-notes/sample.zip",
-      "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1423536101066,
-      "creationDate": 1423528466539
+      "type": "App Designer",
+      "src": "appDesigner",
+      "projectGuid": "eace58d6-58ad-47e3-b346-046998406afe",
+      "lastModifiedDate": 1425977412272,
+      "creationDate": 1399451984614,
+      "projectTypeName": "com.intel.xdk.projecttype.jsapp"
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",
     "startFile": "index.html",
     "projectFiles": {},
     "projectDirectories": {},
-    "libraries": [
-      {
-        "name": "Cordova",
-        "version": "2.9.0",
-        "data": {
-          "default": true
-        }
-      },
-      {
-        "name": "intelXDK",
-        "version": "4.0.0",
-        "data": {
-          "default": true
-        }
-      }
-    ],
+    "libraries": [],
     "serviceMethods": [],
     "cordovaPluginsDirectory": "plugins",
     "cordovaPlugins": [
       {
-        "id": "intel.xdk.base",
-        "selectedState": "Auto",
-        "data": {},
-        "paramvals": {}
-      },
-      {
         "id": "com.intel.security",
-        "version": "1.0.0",
-        "selectedState": "Included",
-        "data": {},
-        "paramvals": {}
-      },
-      {
-        "id": "intel.xdk.device",
+        "version": "",
         "selectedState": "Included",
         "data": {},
         "paramvals": {}
@@ -59,14 +32,12 @@
         "runtime_": "Cordova 3.x",
         "name_": "Android",
         "preferences_": {
-          "android-minSdkVersion": "10",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-minSdkVersion": "10"
         },
         "isActive_": true,
-        "appName_": "MyPrivateNotes",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appName_": "My private notes",
+        "appID_": "com.intel.MyPrivateNotes",
+        "appAccess_": [],
         "icons_": [
           {
             "relPath": "icon.png",
@@ -78,25 +49,30 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "android-minSdkVersion": "10",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0",
-        "appVersionCode_": "1"
+        "cordovaCLIVersion_": "3.5",
+        "crosswalkVersion_": "10",
+        "appVersion_": "2.0.0",
+        "appDescription_": "Intel App Security API demo",
+        "appAuthor_": "Dennis Filimonov",
+        "appVersionCode_": ""
       },
       "Android-Crosswalk": {
         "platform_": "android",
         "runtime_": "Crosswalk with Cordova 3.x",
         "name_": "Android-Crosswalk",
         "preferences_": {
-          "android-minSdkVersion": "14",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+          "android-minSdkVersion": "14"
         },
         "isActive_": true,
-        "appName_": "MyPrivateNotes",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appName_": "My private notes",
+        "appID_": "com.intel.MyPrivateNotes",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [
           {
             "relPath": "icon.png",
@@ -108,69 +84,63 @@
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "android-minSdkVersion": "14",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0",
-        "appVersionCode_": "1"
+        "cordovaCLIVersion_": "4.1.2",
+        "crosswalkVersion_": "10",
+        "appVersion_": "2.0.0",
+        "appDescription_": "Intel App Security API demo",
+        "appAuthor_": "Dennis Filimonov",
+        "appVersionCode_": ""
       },
       "iOS": {
         "platform_": "ios",
         "runtime_": "Cordova 3.x",
         "name_": "iOS",
-        "preferences_": {
-          "ios-target": "6",
-          "ios-configuration": "adhoc"
-        },
+        "preferences_": {},
         "isActive_": true,
-        "appName_": "MyPrivateNotes",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
+        "appName_": "My private notes",
+        "appID_": "com.intel.MyPrivateNotes",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "ios-target": "6",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0"
+        "cordovaCLIVersion_": "3.5",
+        "crosswalkVersion_": "10",
+        "appVersion_": "2.0.0",
+        "appDescription_": "Intel App Security API demo",
+        "appAuthor_": "Dennis Filimonov"
       },
       "Windows8": {
         "platform_": "windows8",
-        "runtime_": "Cordova 3.x",
+        "runtime_": "W3C on Cordova",
         "name_": "Windows8",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "MyPrivateNotes",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
-        "appAuthor_": "Intel XDK",
+        "appName_": "My private notes",
+        "appID_": "com.intel.MyPrivateNotes",
+        "appAccess_": [
+          {
+            "origin": "*"
+          }
+        ],
         "icons_": [],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
+        "appAuthor_": "Dennis Filimonov",
         "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0.0"
-      },
-      "WindowsPhone8": {
-        "platform_": "wp8",
-        "runtime_": "Cordova 3.x",
-        "name_": "WindowsPhone8",
-        "preferences_": {},
-        "isActive_": true,
-        "appName_": "MyPrivateNotes",
-        "appID_": "not.yet.specified",
-        "appAccess_": "*",
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "iosProvs_": [],
-        "cordovaCLIVersion_": "?",
-        "crosswalkVersion_": "?",
-        "appVersion_": "1.0.0.0"
+        "cordovaCLIVersion_": "3.5",
+        "crosswalkVersion_": "10",
+        "appVersion_": "2.0.0",
+        "appDescription_": "Intel App Security API demo"
       }
     },
     "gameAssetDirectory": "asset",
