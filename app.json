@@ -1,15 +1,23 @@
 {
-"repoName":"sample-my-private-notes",
-"title":"My Private Notes",
-"abbr":"MyPrivateNotes",
-"tooltip":"This is a simple secure notes app demonstrating how to use Intel App Security API",
-"description":"This is a simple secure notes app demonstrating how to use Intel App Security API",
-"articleUrl":"https://software.intel.com/en-us/node/517380#",
-"keywords":["jQuery", "App Security API", "Apache Cordova API"],
-"visible" : "true",
-"highlights" : ["jQuery", "App Security API", "Apache Cordova API"],
-"apppreview":"true",
-"appname":"demo.MyPrivateNotes",
-"relname":"4.0.0",
-"projectTypeName": "com.intel.xdk.projecttype.jsapp"
+   "abbr" : "MyPrivateNotes",
+   "repoName" : "sample-my-private-notes",
+   "relName" : "4.0.0",
+   "highlights" : [
+      "jQuery",
+      "App Security API",
+      "Apache Cordova API"
+   ],
+   "appPreview" : "true",
+   "visible" : "true",
+   "articleUrl" : "https://software.intel.com/en-us/node/517380#",
+   "tooltip" : "This is a simple secure notes app demonstrating how to use Intel App Security API",
+   "keywords" : [
+      "jQuery",
+      "App Security API",
+      "Apache Cordova API"
+   ],
+   "projectTypeName" : "com.intel.xdk.projecttype.jsapp",
+   "title" : "My Private Notes",
+   "description" : "This is a simple secure notes app demonstrating how to use Intel App Security API",
+   "appName" : "demo.MyPrivateNotes"
 }
