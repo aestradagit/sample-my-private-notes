@@ -7,7 +7,7 @@ Intel(R) XDK
 --------------------------
 This sample is part of the Intel(R) XDK. Download the Intel(R) XDK at http://software.intel.com/en-us/html5. 
 To see the technical details of the sample, please visit the sample article page 
-at https://software.intel.com/en-us/node/517380.
+at https://software.intel.com/en-us/html5/articles/my_private_notes_sample.
 
 Important App Files
 ---------------------------
