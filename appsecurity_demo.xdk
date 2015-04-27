@@ -124,7 +124,7 @@
          "crosswalkVersion_": "?",
         "appVersion_": "2.0.0",
         "appDescription_": "Intel App Security API demo",
-         "appAuthor_": "Intel XDK",
+         "appAuthor_": "Intel XDK"
       },
       "Windows8": {
         "platform_": "windows8",
