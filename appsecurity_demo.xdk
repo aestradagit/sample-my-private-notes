@@ -1,238 +1,368 @@
 {
-  "project": {
-    "projectSettingsVersion": "1.2",
-    "creationData": {
-      "projectTypeName": "com.intel.xdk.projecttype.jsapp",
-      "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww19/jsapp/samples-my-private-notes/sample.zip",
-         "projectGuid": "00000000-0000-0000-0000-000000000000",
-      "lastModifiedDate": 1429725765415,
-      "creationDate": 1429725765333
-    },
-    "XDK-app-designer": "true",
-    "sourceDirectory": "www",
-    "startFile": "index.html",
-    "projectFiles": {},
-    "projectDirectories": {},
-    "libraries": [],
-    "serviceMethods": [],
-    "cordovaPluginsDirectory": "plugins",
-    "cordovaPlugins": [
+    "project": {
+        "projectSettingsVersion": "1.2",
+        "creationData": {
+            "projectTypeName": "com.intel.xdk.projecttype.jsapp",
+            "src": "https://appcenter.html5tools-software.intel.com/api/v2.0/redirect/projectrenderers/release-2015-ww19/jsapp/samples-my-private-notes/sample.zip",
+            "projectGuid": "00000000-0000-0000-0000-000000000000",
+            "lastModifiedDate": 1429725765415,
+            "creationDate": 1429725765333
+        },
+        "XDK-app-designer": "true",
+        "sourceDirectory": "www",
+        "startFile": "index.html",
+        "projectFiles": {},
+        "projectDirectories": {},
+        "libraries": [],
+        "serviceMethods": [],
+        "cordovaPluginsDirectory": "plugins",
+           "cordovaPlugins": [
       {
-        "id": "com.intel.security",
-         "version": "?",
-        "selectedState": "Included",
+        "id": "org.apache.cordova.device-motion",
+        "version": "0.2.11",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.camera",
+        "version": "0.3.4",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.media-capture",
+        "version": "0.3.5",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.device-orientation",
+        "version": "0.3.10",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.network-information",
+        "version": "0.2.14",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.contacts",
+        "version": "0.2.15",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.device",
+        "version": "0.2.13",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.battery-status",
+        "version": "0.2.12",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.file",
+        "version": "1.3.2",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.globalization",
+        "version": "0.3.3",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.inappbrowser",
+        "version": "0.5.4",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.media",
+        "version": "0.2.15",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.dialogs",
+        "version": "0.2.11",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.vibration",
+        "version": "0.3.12",
+        "selectedState": "Auto",
+        "data": {},
+        "paramvals": {},
+        "dependsOn": [],
+        "dependedBy": []
+      },
+      {
+        "id": "org.apache.cordova.splashscreen",
+        "version": "0.3.5",
+        "selectedState": "Auto",
         "data": {},
         "paramvals": {},
         "dependsOn": [],
         "dependedBy": []
       }
     ],
-    "buildConfigurations": {
-      "Android": {
-        "platform_": "android",
-         "runtime_": "Cordova 3.x",
-        "name_": "Android",
-        "preferences_": {
-         "android-minSdkVersion": "10",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
+        "buildConfigurations": {
+            "Android": {
+                "platform_": "android",
+                "runtime_": "Cordova 3.x",
+                "name_": "Android",
+                "preferences_": {
+                    "android-minSdkVersion": "10",
+                    "android-targetSdkVersion": "19",
+                    "android-installLocation": "auto"
+                },
+                "isActive_": true,
+                "appName_": "appsecurity_demo",
+                "appID_": "com.intel.MyPrivateNotes",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [
+                    {
+                        "relPath": "icon.png",
+                        "density": "hdpi",
+                        "height": 72,
+                        "width": 72
+                    }
+                ],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "android-minSdkVersion": "10",
+                "iosProvs_": [],
+                "cordovaCLIVersion_": "?",
+                "crosswalkVersion_": "?",
+                "appVersion_": "2.0.0",
+                "appDescription_": "Intel App Security API demo",
+                "appAuthor_": "Intel XDK",
+                "appVersionCode_": ""
+            },
+            "Android-Crosswalk": {
+                "platform_": "android",
+                "runtime_": "Crosswalk with Cordova 3.x",
+                "name_": "Android-Crosswalk",
+                "preferences_": {
+                    "android-minSdkVersion": "14",
+                    "android-targetSdkVersion": "19",
+                    "android-installLocation": "auto"
+                },
+                "isActive_": true,
+                "appName_": "appsecurity_demo",
+                "appID_": "com.intel.MyPrivateNotes",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [
+                    {
+                        "relPath": "icon.png",
+                        "density": "hdpi",
+                        "height": 72,
+                        "width": 72
+                    }
+                ],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "android-minSdkVersion": "14",
+                "iosProvs_": [],
+                "cordovaCLIVersion_": "?",
+                "crosswalkVersion_": "?",
+                "appVersion_": "2.0.0",
+                "appDescription_": "Intel App Security API demo",
+                "appAuthor_": "Intel XDK",
+                "appVersionCode_": ""
+            },
+            "iOS": {
+                "platform_": "ios",
+                "runtime_": "Cordova 3.x",
+                "name_": "iOS",
+                "preferences_": {
+                    "ios-target": "6",
+                    "ios-configuration": "adhoc"
+                },
+                "isActive_": true,
+                "appName_": "appsecurity_demo",
+                "appID_": "com.intel.MyPrivateNotes",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "ios-target": "6",
+                "iosProvs_": [],
+                "cordovaCLIVersion_": "?",
+                "crosswalkVersion_": "?",
+                "appVersion_": "2.0.0",
+                "appDescription_": "Intel App Security API demo",
+                "appAuthor_": "Intel XDK"
+            },
+            "Windows8": {
+                "platform_": "windows8",
+                "runtime_": "Cordova 3.x",
+                "name_": "Windows8",
+                "preferences_": {},
+                "isActive_": true,
+                "appName_": "appsecurity_demo",
+                "appID_": "com.intel.MyPrivateNotes",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appAuthor_": "Intel XDK",
+                "iosProvs_": [],
+                "cordovaCLIVersion_": "?",
+                "crosswalkVersion_": "?",
+                "appVersion_": "2.0.0",
+                "appDescription_": "Intel App Security API demo"
+            },
+            "WebApp": {
+                "platform_": "webapp",
+                "runtime_": "W3C",
+                "name_": "WebApp",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "appsecurity_demo",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appAuthor_": "Intel XDK",
+                "appVersion_": "0.0.1"
+            },
+            "Firefox": {
+                "platform_": "firefoxos",
+                "runtime_": "W3C on Firefox OS",
+                "name_": "Firefox",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "appsecurity_demo",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appAuthor_": "Intel XDK",
+                "appVersion_": "0.0.1"
+            },
+            "Chrome": {
+                "platform_": "chromeos",
+                "runtime_": "W3C on Chrome OS",
+                "name_": "Chrome",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "appsecurity_demo",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appAuthor_": "Intel XDK",
+                "appVersion_": "0.0.1"
+            },
+            "Facebook": {
+                "platform_": "facebook",
+                "runtime_": "W3C on Facebook",
+                "name_": "Facebook",
+                "preferences_": {},
+                "isActive_": false,
+                "appName_": "appsecurity_demo",
+                "appID_": "not.yet.specified",
+                "appAccess_": [
+                    {
+                        "origin": "*"
+                    }
+                ],
+                "icons_": [],
+                "splashes_": [],
+                "addlPermissions_": "",
+                "excludedLibraries_": "",
+                "appAuthor_": "Intel XDK",
+                "appVersion_": "0.0.1"
+            }
         },
-         "isActive_": true,
-        "appName_": "appsecurity_demo",
-        "appID_": "com.intel.MyPrivateNotes",
-         "appAccess_": [{"origin": "*"}],
-        "icons_": [
-          {
-            "relPath": "icon.png",
-            "density": "hdpi",
-            "height": 72,
-            "width": 72
-          }
-        ],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-         "android-minSdkVersion": "10",
-        "iosProvs_": [],
-         "cordovaCLIVersion_": "?",
-         "crosswalkVersion_": "?",
-        "appVersion_": "2.0.0",
-        "appDescription_": "Intel App Security API demo",
-         "appAuthor_": "Intel XDK",
-        "appVersionCode_": ""
-      },
-      "Android-Crosswalk": {
-        "platform_": "android",
-         "runtime_": "Crosswalk with Cordova 3.x",
-        "name_": "Android-Crosswalk",
-        "preferences_": {
-         "android-minSdkVersion": "14",
-          "android-targetSdkVersion": "19",
-          "android-installLocation": "auto"
-        },
-         "isActive_": true,
-        "appName_": "appsecurity_demo",
-        "appID_": "com.intel.MyPrivateNotes",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [
-          {
-            "relPath": "icon.png",
-            "density": "hdpi",
-            "height": 72,
-            "width": 72
-          }
-        ],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-         "android-minSdkVersion": "14",
-        "iosProvs_": [],
-         "cordovaCLIVersion_": "?",
-         "crosswalkVersion_": "?",
-        "appVersion_": "2.0.0",
-        "appDescription_": "Intel App Security API demo",
-         "appAuthor_": "Intel XDK",
-        "appVersionCode_": ""
-      },
-      "iOS": {
-        "platform_": "ios",
-         "runtime_": "Cordova 3.x",
-        "name_": "iOS",
-        "preferences_": {
-         "ios-target": "6",
-          "ios-configuration": "adhoc"
-        },
-         "isActive_": true,
-        "appName_": "appsecurity_demo",
-        "appID_": "com.intel.MyPrivateNotes",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-         "ios-target": "6",
-        "iosProvs_": [],
-         "cordovaCLIVersion_": "?",
-         "crosswalkVersion_": "?",
-        "appVersion_": "2.0.0",
-        "appDescription_": "Intel App Security API demo",
-         "appAuthor_": "Intel XDK"
-      },
-      "Windows8": {
-        "platform_": "windows8",
-         "runtime_": "Cordova 3.x",
-        "name_": "Windows8",
-        "preferences_": {},
-         "isActive_": true,
-        "appName_": "appsecurity_demo",
-        "appID_": "com.intel.MyPrivateNotes",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-         "appAuthor_": "Intel XDK",
-        "iosProvs_": [],
-         "cordovaCLIVersion_": "?",
-         "crosswalkVersion_": "?",
-        "appVersion_": "2.0.0",
-        "appDescription_": "Intel App Security API demo"
-      },
-      "WebApp": {
-        "platform_": "webapp",
-         "runtime_": "W3C",
-        "name_": "WebApp",
-        "preferences_": {},
-         "isActive_": false,
-        "appName_": "appsecurity_demo",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appAuthor_": "Intel XDK",
-        "appVersion_": "0.0.1"
-      },
-      "Firefox": {
-        "platform_": "firefoxos",
-         "runtime_": "W3C on Firefox OS",
-        "name_": "Firefox",
-        "preferences_": {},
-         "isActive_": false,
-        "appName_": "appsecurity_demo",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appAuthor_": "Intel XDK",
-        "appVersion_": "0.0.1"
-      },
-      "Chrome": {
-        "platform_": "chromeos",
-         "runtime_": "W3C on Chrome OS",
-        "name_": "Chrome",
-        "preferences_": {},
-         "isActive_": false,
-        "appName_": "appsecurity_demo",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appAuthor_": "Intel XDK",
-        "appVersion_": "0.0.1"
-      },
-      "Facebook": {
-        "platform_": "facebook",
-         "runtime_": "W3C on Facebook",
-        "name_": "Facebook",
-        "preferences_": {},
-         "isActive_": false,
-        "appName_": "appsecurity_demo",
-        "appID_": "not.yet.specified",
-        "appAccess_": [
-          {
-            "origin": "*"
-          }
-        ],
-        "icons_": [],
-        "splashes_": [],
-        "addlPermissions_": "",
-        "excludedLibraries_": "",
-        "appAuthor_": "Intel XDK",
-        "appVersion_": "0.0.1"
-      }
-    },
-    "gameAssetDirectory": "asset",
-    "gameMetadata": {},
-    "projectTags": []
-  }
+        "gameAssetDirectory": "asset",
+        "gameMetadata": {},
+        "projectTags": []
+    }
 }
